@@ -1,0 +1,256 @@
+@import "reset.css";
+body{
+  position: relative;
+  background-color: white;
+}
+header{
+  position: fixed;
+  display: grid;
+  grid-template-columns:  400px 1fr 200px;
+  grid-template-areas: "logo list account";
+  width: 100vw;
+  height: 64px;
+  padding: 0;
+  background-color: #4A148C;
+  z-index: 1;
+  box-shadow: 2px 2px 2px #2f0c5a;
+}
+
+header .logo a{
+  display: inline-block;
+  grid-area: logo;
+  margin: 15px;
+  line-height: 32px;
+  color: white;
+  font-weight: bold;
+  font-size: x-large;
+  text-decoration: none;  
+}
+header ol{
+  grid-area: list;
+}
+header li{
+  display: inline-block;
+  margin: 30px;
+  line-height: 4px;
+}
+header ol a{
+  color: white;
+  text-decoration: none;
+}
+header ol li:hover{
+  border-bottom: 4px solid rgb(228, 228, 228);
+  height: 30px;
+}
+
+header .account{
+  display: inline-block;
+  grid-area: account;
+  margin: 15px;
+  line-height: 34px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+/*---------------------------------------------------------------------------*/
+main{
+  padding-top: 64px;
+  padding-left: 170px;
+  font-weight: 900;
+
+}
+main aside{
+  position: fixed;
+  top: 64px;
+  left: 0px;
+  display: block;
+  width: 170px;
+  height: 100vh;
+  border: 1px solid lightgray;
+  background-color: #F3E5F5;
+  z-index: 0;
+}
+
+main aside div{
+  position: relative;
+  top: 50px;
+  left: 0;
+  text-align: center;
+  font-size: 1.3rem ;
+  color: grey;
+}
+main aside nav{
+  position: relative;
+  top: 100px;
+  left: 0;
+  text-align: center;
+  font-size: 1.1rem;
+}
+main aside nav li{
+  padding: 10px;
+  margin: 0;
+}
+main aside nav li:hover{
+  background-color: #604f63;
+  color: white;
+}
+main .section_title{
+  border: 5px solid #fdfdfd;
+  color: black;
+  padding: 50px 200px;
+}
+main .section_title div{
+  margin: 50px;
+  padding: 50px;
+  font-size: 1.5rem;
+}
+main .section_article{
+ position: relative;
+ padding: 50px;
+ background-color: rgb(248, 248, 248);
+ border: 1px solid #eed1f3;
+} 
+
+main .section_article article{
+  position: relative;
+  top: 10px;
+  left: 10px;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5%;
+  box-shadow: 10px 10px 10px lightgray;
+}
+main .section_article article .photo{
+  width: 300px;
+  height: 250px;
+  border-radius: 5%;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe7eP2Isk9lQ4jYQnwI3zuJVuK6VG7v9gUOA&usqp=CAU);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  
+}
+
+main .section_article article .info{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  height: 80px;
+}
+main .section_article article .info #div1{
+  display: inline-block;
+  background-image: url(/chapter3/photo_file/heart_off.png);
+  background-repeat: no-repeat;
+  background-size: small;
+  background-position: center; 
+  cursor: pointer;
+}
+main .section_article article .info #div1:hover{
+  background-image: url(/chapter3/photo_file/heart_on.png);
+}
+main .section_article article .info .on{
+  display: inline-block;
+  background-image: url(/chapter3/photo_file/heart_on.png);
+  background-repeat: no-repeat;
+  background-size: small;
+  background-position: center;
+  
+}
+main .section_article article .info .on:hover{
+  background-image: url(/chapter3/photo_file/heart_off.png);
+  cursor: pointer;
+}
+main .section_article article .info #div2 #greeting{
+  margin-top: 20px;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+main .section_article article .info #div2 #name{
+  margin-left: 10px;
+  color: rgb(202, 202, 202);
+}
+main .section_article article:hover{
+  box-shadow:
+  3px 3px 2px #F3E5F5,
+  5px 5px 3px #dabae0,
+  10px 10px 5px #F3E5F5;
+}
+
+main .section_article article #a:hover{
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ41lv4s7FzuJH0lhptIEL-3iB7BzTn36tEA&usqp=CAU);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+} 
+main .section_article article #b:hover{
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtVN-veVbjlF7lL0YXne_AMf7sojF7H-D2qQ&usqp=CAU);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+main .section_article article #d:hover{
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZeZpe6DBR37N_wuplOuSmFZdjL8q3dbPJgQ&usqp=CAU);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+main .section_article article #c:hover{
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ41lv4s7FzuJH0lhptIEL-3iB7BzTn36tEA&usqp=CAU);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main #button{
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  width: 70px;
+  height: 70px;
+  background-color: lightsteelblue;
+  border-radius: 50%;
+  background-image: url(/chapter3/photo_file/camera.png);
+  background-size: 50%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  z-index: 2;
+  box-shadow: 2px 2px 2px rgb(94, 110, 131);
+}
+
+main #button:hover{
+  background-color: rgb(136, 151, 172);
+  cursor: pointer;
+}
+/*---------------------------------------------------------------------*/
+
+footer{
+  position: relative;
+  background-color: mediumpurple;
+  padding: 30px;
+  text-align: center;
+}
+footer div{
+  position: relative;
+  display: inline-block;    
+  padding: 10px;
+  
+}
+footer div ol{
+  color: white;
+  font-weight: 400;
+  padding: 0 50px;
+}
+footer div ol li{
+  float: left;
+  padding: 0 40px;
+}
+footer div ol li:not(:last-child){
+  border-right: 0.5px solid white;
+}
+
+footer div ol li:hover{
+  cursor: pointer;
+}
